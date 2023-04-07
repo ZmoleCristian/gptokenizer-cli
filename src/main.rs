@@ -46,7 +46,8 @@ fn read_input(input_file: &str) -> String {
     } else {
         let file = File::open(input_file).unwrap();
         let reader = BufReader::new(file);
-        reader.lines().map(|line| line.unwrap()).collect()
+        let lines = reader.lines().map(|line| line.unwrap()).collect::<Vec<String>>();
+        lines.join("\n")
     }
 }
 
