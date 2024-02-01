@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 tiktoken-rs = "0.3.3"
 structopt = "0.3"
+proc-macro2 = "1.0.78"
